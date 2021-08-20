@@ -1,5 +1,6 @@
 $gray_color: #777;
 $light_gray: #999;
+$dark_white: #e9e9e9;
 
 @import url(owl.theme.default.css);
 @import url(owl.carousel.css);
@@ -155,6 +156,21 @@ header{
     color: $gray_color;
   }
 }
-
-
-/*Header*/
+.pages{
+  display: block;
+  padding: 16px 204px;
+  border-bottom: 1px solid $dark_white;
+  border-top: 1px solid $dark_white;
+  margin-bottom: 30px;
+}
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px white solid;
+  padding-top: 7px;
+  text-align: center;
+  box-sizing: border-box;
+}
