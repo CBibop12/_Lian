@@ -156,13 +156,89 @@ header{
     color: $gray_color;
   }
 }
-.pages{
-  display: block;
+.pages {
+  display: flex;
   padding: 16px 204px;
   border-bottom: 1px solid $dark_white;
   border-top: 1px solid $dark_white;
   margin-bottom: 30px;
+  .pages_h3 {
+    color: $gray_color;
+    font: 14px Roboto-Bold;
+    transition: 0.3s;
+    text-transform: uppercase;
+    padding: 9px 18px;
+    letter-spacing: 3px;
+    cursor: pointer;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  }
+  span{
+      font: 28px Roboto-Light;
+      color: #dcdcdc;
+    }
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  img {
+    padding: 15px 17px;
+    width: 100%;
+  }
+  .first_column, .second_column, .third_column {
+    width: 360px;
+  }
+  .second_column {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .img_item {
+    background-color: rgba(0,0,0,0.5);
+  }
 }
+
+.load_more_btn {
+  margin-right: auto;
+  margin-left: auto;
+  width: 125px;
+  height: 29px;
+  border-radius: 1px;
+  background-color: #959595;
+  color: white;
+  font: 13px Roboto-Bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+  margin-top: 35-15px;
+  transition: 0.3s;
+  &:hover {
+    background-color: transparent;
+    border: 1px solid #959595;
+    color: #959595;
+    cursor: pointer;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
   display: block;
   width: 40px;

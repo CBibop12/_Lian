@@ -28,3 +28,10 @@ $('.slider').owlCarousel({
     nav : true,
     pagination : true
 });
+
+$(document).ready(function(){
+
+    $(".logo, .pages_h3").click(function(){
+        $(".all, .branding").toggleClass("active");
+    });
+});
